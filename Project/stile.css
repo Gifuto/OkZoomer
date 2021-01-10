@@ -1,0 +1,209 @@
+body {
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    max-height: 1000px;
+    margin: 0;
+    object-fit: cover;
+}
+
+.head {
+    width: 100%;
+    margin: 0 auto;
+    height: auto !important;
+}
+
+header {
+    padding: 2rem 2rem;
+    background-image: url(img/Wallpaper.jpg);
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo {
+    margin: 1.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+li {
+    display: inline-block;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+.NavMenu {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 7rem;
+    color: white;
+    
+}
+
+.header-text {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.header-button {
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    z-index: 1;
+    overflow: hidden;
+    font-size: 2em;
+    color: #fff;
+    border: 0.25rem solid white;
+    margin: 1rem;
+    position: relative;
+
+    height: 5rem;
+    width: 10rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+}
+
+button:hover {
+    color: black;
+    border: 0.25rem solid black;
+}
+
+button::after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+
+button[class^="slide"]::after {
+    transition: all 0.35s;
+}
+
+button[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+
+button.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+}
+
+.section1{
+    padding: 5rem 5rem;
+    background-color: white;
+}
+
+.section1-h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.img-section1{
+    display: flex;
+    justify-content: center;
+}
+
+.img-services1{
+    margin: 1rem;
+    border-radius: 5rem;
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+}
+
+.img-services2{
+    margin: 1rem;
+    border-radius: 5rem;
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+}
+
+.img-services3{
+    margin: 1rem;
+    border-radius: 5rem;
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+}
+
+.section1-text{
+    text-align: center;
+    font-size: 2.2rem;
+        
+}
+
+.section2{
+    padding: 5rem 5rem;
+    background-color: black;
+}
+
+.img-section2{
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: repeat(2, 20rem);
+}
+
+
+
+.section3-h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+h3{
+    margin-left: 2.5rem;
+    
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.img-shop{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 5rem;
+    transition: 1s; /* Время эффекта */
+}
+
+.img-shop:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.section-p{
+    margin-left: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contacts{
+    color: black;
+    text-align: center;
+}
